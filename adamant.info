@@ -1,0 +1,4 @@
+name = Adamant
+description = Custom Module to access Adamant DB.
+core = 7.x
+package = Other

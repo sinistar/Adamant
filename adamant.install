@@ -1,0 +1,36 @@
+<?php
+
+function adamant_schema() {
+  $schema['adamant_custom'] = array(
+    'description' => t('The base table for queries.'),
+    'fields' => array(
+      'qid' => array(
+        'description' => t('The primary identifier for a query.'),
+        'type' => 'serial'),
+      'title' => array(
+        'description' => t('The name of the query.'),
+        'type' => 'text'),
+      'type' => array(
+        'description' => t('Type of the saved query'),
+        'type' => 'character',
+        'size' => 3),
+      'query' => array(
+        'description' => t('The SQL of the query.'),
+        'type' => 'text'),
+      'fav' => array(
+        'description' => t('Favorite query'),
+        'type' => 'boolean'),
+      'chart' => array(
+        'description' => t('Chart type'),
+        'type' => 'integer'),
+      'tag' => array(
+        'description' => t('Category'),
+        'type' => 'integer'),
+      ),
+    'primary key' => array('qid'),
+    );
+  return $schema;
+}
+
+
+?>

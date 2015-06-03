@@ -1,0 +1,11 @@
+.db-field-selector-wrapper .form-checkboxes {
+	border: 1px solid #ccc;
+	max-height: 200px;
+	overflow: auto;
+}
+.db-field-selector-wrapper .form-checkboxes .form-item { 
+  border: 1px transparent solid; 
+  display: inline-block;
+  width: 24%;
+  margin: 0;
+}

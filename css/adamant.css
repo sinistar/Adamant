@@ -1,0 +1,10 @@
+img.icon {
+  vertical-align: middle;
+}
+.adamant-pager-item {
+  display: inline-block;
+  margin: 0 .3em;
+}
+.adamant-pager-item-current {
+  font-weight: bold;
+}
